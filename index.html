@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Acolher - Denúncia e Apoio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Acolher</h1>
+  <p>Espaço seguro para denúncias e apoio</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Fazer uma denúncia</h2>
+    <form id="formDenuncia">
+      <label>Descreva o ocorrido:</label>
+      <textarea id="descricao" required></textarea>
+
+      <label>Local (opcional):</label>
+      <input type="text" id="local">
+
+      <label>Data (opcional):</label>
+      <input type="date" id="data">
+
+      <button type="submit">Enviar denúncia</button>
+      <p id="mensagem" class="success"></p>
+    </form>
+  </div>
+
+  <div class="card support">
+    <h2>Apoio</h2>
+    <p>Você não está sozinha. Procure ajuda:</p>
+    <ul>
+      <li>Ligue 180 (Central de Atendimento à Mulher)</li>
+      <li>Delegacia da Mulher mais próxima</li>
+      <li>Fale com alguém de confiança</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Emergência</h2>
+    <button class="emergency" onclick="ligarEmergencia()">Ligar para ajuda imediata</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
